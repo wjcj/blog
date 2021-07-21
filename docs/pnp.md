@@ -136,7 +136,7 @@ yarn jest
 yarn node index.js
 ```
 
-您在一个自动执行 Node 脚本的系统上运行而您没有机会选择它们的执行方式，只需在你的 init 脚本顶部引入 PnP 文件并调用 `setup` 函数：
+或者在你 init 脚本顶部引入 PnP 文件并调用 `setup` 函数：
 
 ``` js
 // index.js
@@ -180,7 +180,3 @@ module.exports = {
 - [Yarn PnP](https://yarnpkg.com/features/pnp)
 - [Yarn 2 Migration](https://yarnpkg.com/getting-started/migration#switching-to-plugnplay)
 - [Yarn 2 Install](https://yarnpkg.com/getting-started/install)
-
-
-
-<!-- 现在需要手动调用自定义 pre-hooks（例如 prestart） -->
