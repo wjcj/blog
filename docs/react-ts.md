@@ -1,5 +1,7 @@
-React 和 Typescript
+React 和 Typescript（上）
 ======
+
+本文大部分内容翻译至[React TypeScript Cheatsheet](https://react-typescript-cheatsheet.netlify.app/docs/basic/setup)，并根据个人感受补充、阉割了部分内容，想更详细了解可查看[原文](https://react-typescript-cheatsheet.netlify.app/docs/basic/setup)。《React 和 Typescript（下）》准备整理常见问题及解决方案。
 
 ## 开始
 
@@ -25,14 +27,13 @@ React 和 Typescript
     "lib": ["dom", "es2015"],             // 库文件（声明文件）：至少支持dom 和 es2015特性
     
     /* 其他可选项 */
-    "allowSyntheticDefaultImports": true, // 允许合成默认导入：模块没有显式指定默认导出时，允许默认导入（即支持 `import React from "react"`; 而不需要 `import * as React from "react"`）。
+    "allowSyntheticDefaultImports": true, // 允许合成默认导入：模块没有显式指定默认导出时，允许默认导入（即支持 `import React from "react"`，而不需要 `import * as React from "react"`）。
     "esModuleInterop": true,              // TypeScript 处理 CommonJS/AMD/UMD 模块时将存在一些缺陷，开启 esModuleInterop 可修复这些缺陷
     "experimentalDecorators": true        // 支持装饰器
   }
 }
 ```
-
-更多配置项可查看[tsconfig.json](https://github.com/fuyi0115/blog/issues/24)。
+更多配置项可查看[tsconfig.json 详解](https://github.com/wjcj/blog/issues/24)。
 
 ## Prop Types
 
@@ -58,7 +59,7 @@ type AppProps = {
     [key: string]: MyTypeHere;
   };
   dict2: Record<string, MyTypeHere>; // 相当于 dict1
-  onSomething: Function; // 任何函数，只要您不调用它（不推荐）
+  onSomething: Function; // 任何函数，只要你不调用它（不推荐）
   onClick: () => void;
   onChange: (id: number) => void;
   onClick(event: React.MouseEvent<HTMLButtonElement>): void;
@@ -82,7 +83,7 @@ export declare interface AppProps {
 
 **`React.ReactNode` 极端情况**
 
-``` ts
+``` tsx
 type Props = {
   children: React.ReactNode;
 };
@@ -93,7 +94,7 @@ function App() {
   return <Comp>{{}}</Comp>; // Runtime Error: Objects not valid as React Child!
 }
 ```
-这是因为 `ReactNode` 包含 `ReactFragment`（它允许 `{}`），修复这个会破坏很多库，所以你只需要注意 `ReactNode` 并不是绝对安全的。
+这是因为 `ReactNode` 包含 `ReactFragment`（它允许 `{}`），修复这个会破坏很多库，所以你只需要注意 `ReactNode` 并不是绝对安全。
 
 **`React.ReactNode` vs `JSX.Element`**
 
@@ -102,7 +103,7 @@ function App() {
 - `JSX.Element` -> `React.createElement` 的返回值
 - `React.ReactNode` -> 组件的返回值
 
-### `type` or `interface`
+**`type` or `interface`？**
 
 在创建库或第三方的类型定义时，始终使用 `interface` 作为公共 API 的定义，因为这允许使用者在缺少某些定义时通过声明合并来扩展。
 而你的 React 组件 `Props` 和 `State` 考虑使用 `Type` 以保持一致性，因为它受到更多限制。
@@ -525,6 +526,7 @@ useEffect(() => {
 });
 ```
 *`useLayoutEffect` 会在所有的 DOM 变更之后同步调用 effect，使用方式与 `useEffect` 基本一致。*
+
 ### useRef
 
 **访问 DOM**
@@ -533,7 +535,7 @@ useEffect(() => {
 function Foo() {
   // 如果可能的话请尽可能具体（例如具体性：HTMLDivElement > HTMLElement > Element），将返回 React.RefObject<HTMLDivElement>
   const divRef = useRef<HTMLDivElement>(null);
-  // const divRef = useRef<HTMLDivElement>(null!); // 如果您确定 divRef.current 永远不会为空，那么也可以使用非空断言运算符(`!`)
+  // const divRef = useRef<HTMLDivElement>(null!); // 如果你确定 divRef.current 永远不会为空，那么也可以使用非空断言运算符(`!`)
 
   useEffect(() => {
     // ref.current 可能为空。因为绑定 ref 的元素渲染时有条件地，也可能你忘记绑定 ref
@@ -736,7 +738,7 @@ export const FancyButton = React.forwardRef((
 ));
 ```
 
-如果你想要获取 `forward` 中 `ref` 组件的 props，请使用 [ComponentPropsWithRef<E>](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/a05cc538a42243c632f054e42eab483ebf1560ab/types/react/index.d.ts#L770).
+如果你想要获取 `forward` 中 `ref` 组件的 props，请使用 [ComponentPropsWithRef<E>](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/a05cc538a42243c632f054e42eab483ebf1560ab/types/react/index.d.ts#L770)。
 
 ## 参考
 - [React TypeScript Cheatsheet](https://react-typescript-cheatsheet.netlify.app/docs/basic/setup)
