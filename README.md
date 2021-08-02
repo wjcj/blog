@@ -9,6 +9,7 @@
 - [ ] Git 基操与常见状况处理
 - [ ] ESLint 配置与实践
 - [ ] Lerna 介绍与实际运用
+- [x] Redux 所有 API 实现详解
 - [x] Sentry 错误采集原理
 - [x] Promise 实现
 - [x] Babel 常用插件、预设详解
