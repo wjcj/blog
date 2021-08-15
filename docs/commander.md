@@ -353,7 +353,7 @@ const child = spawn('npm', ['list', '-g', '-depth', '0'], { stdio: 'inherit' });
 const result = spawn.sync('npm', ['list', '-g', '-depth', '0'], { stdio: 'inherit' });
 ```
 
-## 参考
+# 参考
 
 - [fs-extra](https://github.com/jprichardson/node-fs-extra#methods)
 - [chalk](https://github.com/chalk/chalk)

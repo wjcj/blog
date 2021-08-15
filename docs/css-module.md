@@ -1,7 +1,7 @@
 CSS Modules 特性与项目实践
 ====
 
-CSS Modules 本身比较简单，还要写它的原因是我发现网上很多关于 CSS Modules 的教程或实践文章都已经过时，其中存在已经使用方式现今已经不可行，所以本文介绍其最新的使用方式。<br/>
+CSS Modules 本身比较简单，还要写它的原因是我发现网上很多关于 CSS Modules 的教程或实践文章都已经过时，会存在某些使用方式现今已不可行的情况。<br/>
 可前往 [css-modules-demo](https://github.com/wjcj/css-modules-demo) 查看本文中所有示例完整代码。
 
 ## 特性

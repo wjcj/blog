@@ -1,7 +1,7 @@
 Babel 7.x 配置与使用
 =====
 
-本文主要介绍 Babel 7 的基本使用方式与其新特性在 monorepos 类型项目中配置应用。可以从[](https://github.com/wjcj/babel-7-monorepo-demo) `clone` 示例源码，简单的示例也可以使用 Babel 提供的[在线编译平台](https://babeljs.io/repl/)。
+本文主要介绍 Babel 7 的基本使用方式与其新特性在 monorepos 类型项目中配置应用。可以从[这里](https://github.com/wjcj/babel-7-monorepo-demo) `clone` 示例源码，简单的示例也可以使用 Babel 提供的[在线编译平台](https://babeljs.io/repl/)。
 
 ## 开始
 

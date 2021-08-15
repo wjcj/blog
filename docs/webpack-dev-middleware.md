@@ -21,7 +21,7 @@ webpack-dev-server vs webpack-dev-middleware vs webpack-hot-middleware
 
 **客户端的主要作用？**
 
-当文件改动时 webpack 会重新编译，客户端监听来自服务端推送的、与文件变更有关的 websocket 消息（`hash` 和 `ok` 消息），当客户端收到 `ok` 消息后会执行 `reloadApp`方法进行更新，
+当文件改动时 webpack 会重新编译，客户端监听来自服务端推送的、与文件变更有关的 websocket 消息（`hash` 和 `ok` 消息），当客户端收到 `ok` 消息后会执行 `reloadApp` 方法进行更新，
 `reloadApp` 方法中会对 `devServer.hot` 配置进行判断是否支持热更新，如果支持则触发 `webpackHotUpdate` 事件应用热更新（HMR），如果不支持则直接刷新浏览器（live reload）。
 
 **客户端是如何生成的？**

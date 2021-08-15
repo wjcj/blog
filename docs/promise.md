@@ -232,7 +232,7 @@ function finale(self) {
     }
     self._deferreds = null;
   }
-  // _deferreds 为 nulls时就什么也不做
+  // _deferreds 为 nulls 时就什么也不做
 }
 ```
 

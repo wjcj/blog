@@ -2,11 +2,13 @@
 
 所有博文暂时仅放置于 [Issues](https://github.com/wjcj/blog/issues)，每周保持至少2篇更新。
 
-内容主要着眼于前端常用库/工具的使用和实现详解，并尽量附带示例库，期望在百篇内能整理成完整目录。如文章存在谬误恳请告知，十分感谢。
+内容主要涉及前端常用库/工具的使用或实现。期望在40篇内覆盖常用工具，60篇内覆盖常用库，百篇内查漏补缺整理成完整目录。文章如存在谬误恳请告知，十分感谢。
 
 ## 更新中
 
+- [ ] Webpack tree shaking 和 sideEffects
 - [ ] Git 基操与常见状况处理
+- [ ] React SSR 实践
 - [ ] ESLint 配置与实践
 - [ ] Lerna 介绍与实际运用
 - [x] Promise 实现
@@ -23,12 +25,11 @@
 - [x] Webpack 实现（入门篇）
 - [x] npm-shrinkwrap.json vs package-lock.json
 - [x] React 和 Typescript（上）
-- [x] typescript 中 Object、{} 和 object 的区别
 - [x] tsconfig.json 详解
-- [x] esm、amd、cjs、umd
-- [x] 开源一个 React 组件库
 - [x] package.json 配置详解
-- [ ] Webpack tree shaking 和 sideEffects
+- [x] 开源一个 React 组件库
 - [x] React diff 策略
 - [x] Vue JSX 实现详解
 - [x] Event Loop
+- [x] esm、amd、cjs、umd
+- [x] typescript 中 Object、{} 和 object 的区别
