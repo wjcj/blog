@@ -1,7 +1,7 @@
 Git 基操、协作流程和常见状况处理
 ====
 
-## 基本概念
+## 基础概念
 
 ![git](https://i.ibb.co/bH2Ynct/git.jpg)
 

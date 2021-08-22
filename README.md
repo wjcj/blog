@@ -6,6 +6,7 @@
 
 ## 更新中
 
+- [x] react-redux、reselect 使用与原理详解
 - [x] Git 基操、协作流程与常见状况处理
 - [x] React SSR 的诸多细节
 - [x] Redux 所有 API 实现详解
