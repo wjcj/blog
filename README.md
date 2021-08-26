@@ -6,6 +6,7 @@
 
 ## 更新中
 
+- [x] 维护一个 npm 包
 - [ ] React 和 Typescript（下）
 - [x] react-redux、reselect 使用与原理详解
 - [x] Git 基操、协作流程与常见状况处理
