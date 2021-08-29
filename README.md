@@ -6,6 +6,7 @@
 
 ## 更新中
 
+- [x] 以表情包性能优化为例聊聊图片加载性能优化
 - [x] 维护一个 npm 包
 - [ ] React 和 Typescript（下）
 - [x] react-redux、reselect 使用与原理详解
