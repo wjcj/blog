@@ -6,6 +6,8 @@
 
 ## 更新中
 
+- [x] Linters 及其周边
+- [x] rc-virtual-list 虚拟列表原理及其实现
 - [x] 以表情包性能优化为例聊聊图片加载性能优化
 - [x] 维护一个 npm 包
 - [ ] React 和 Typescript（下）
